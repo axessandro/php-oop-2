@@ -11,5 +11,5 @@ foreach ($products as $productItem) {
     $size = $productItem->size;
     $price = $productItem->price;
 
-    $item = new Product($name, $category, $under_category, $size, setPrice($price));
+    $item = new Product($name, $category, $under_category, $size, $price);
 }

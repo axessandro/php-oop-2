@@ -15,15 +15,5 @@ class Product
         $this->category = $category;
         $this->under_category = $under_category;
         $this->size = $size;
-        $this->price = $price;
-    }
-
-    public function setPrice($price)
-    {
-        $this->price = $price;
-    }
-    public function getPrice()
-    {
-        return $this->price;
     }
 }
