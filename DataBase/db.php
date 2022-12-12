@@ -7,7 +7,7 @@ $products = [
         "category" => "dog",
         "under_category" => "food",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 26
     ],
     [
         "name" => "Crocchette 'Top Dog' per cane adulto",
@@ -15,7 +15,7 @@ $products = [
         "category" => "dog",
         "under_category" => "food",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 8
     ],
     [
         "name" => "Lettino",
@@ -23,7 +23,7 @@ $products = [
         "category" => "dog",
         "under_category" => "bed",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 18
     ],
     [
         "name" => "Cuccia",
@@ -31,7 +31,7 @@ $products = [
         "category" => "dog",
         "under_category" => "bed",
         "packaging" => "Paper",
-        "price" => 29.99
+        "price" => 28
     ],
     [
         "name" => "Corda",
@@ -39,7 +39,7 @@ $products = [
         "category" => "dog",
         "under_category" => "toy",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 9
     ],
     [
         "name" => "Pallina",
@@ -47,7 +47,7 @@ $products = [
         "category" => "dog",
         "under_category" => "toy",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 4
     ],
     [
         "name" => "Crocchette 'Purina' per gatto adulto",
@@ -63,7 +63,7 @@ $products = [
         "category" => "cat",
         "under_category" => "food",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 11
     ],
     [
         "name" => "Coperta",
@@ -71,7 +71,7 @@ $products = [
         "category" => "cat",
         "under_category" => "bed",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 8
     ],
     [
         "name" => "Cuccia",
@@ -79,7 +79,7 @@ $products = [
         "category" => "cat",
         "under_category" => "bed",
         "packaging" => "Paper",
-        "price" => 29.99
+        "price" => 16
     ],
     [
         "name" => "Tiragraffi",
@@ -87,7 +87,7 @@ $products = [
         "category" => "cat",
         "under_category" => "toy",
         "packaging" => "Paper",
-        "price" => 29.99
+        "price" => 13
     ],
     [
         "name" => "Pallina",
@@ -95,6 +95,6 @@ $products = [
         "category" => "cat",
         "under_category" => "toy",
         "packaging" => "Plastic",
-        "price" => 29.99
+        "price" => 5
     ]
 ];
