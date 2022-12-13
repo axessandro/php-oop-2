@@ -82,25 +82,25 @@ $productsArray = [
         [
             "name" => "Corda",
             "category" => "Cane",
-            "material" => "plastic",
+            "material" => "Plastica",
             "price" => 9.99
         ],
         [
             "name" => "Pallina",
             "category" => "Cane",
-            "material" => "plastic",
+            "material" => "Plastica",
             "price" => 4.49
         ],
         [
             "name" => "Tiragraffi",
             "category" => "Gatto",
-            "material" => "paper",
+            "material" => "Cartone",
             "price" => 13.49
         ],
         [
             "name" => "Pallina",
             "category" => "Gatto",
-            "material" => "plastic",
+            "material" => "Plastica",
             "price" => 5.49
         ]
     ]

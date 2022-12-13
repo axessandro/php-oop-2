@@ -51,7 +51,7 @@ $guest->addCreditCard(new CreditCard("2123242342", "883", 12, 2023));
                             <!-- CARD -->
                             <div class="card p-4">
                                 <!-- name -->
-                                <div class="name"><?php echo $product["name"] ?></div>
+                                <div class="name py-2"><?php echo $product["name"] ?></div>
                                 <!-- name -->
 
                                 <!-- category -->
@@ -67,22 +67,38 @@ $guest->addCreditCard(new CreditCard("2123242342", "883", 12, 2023));
                                 <!-- price -->
                                 <div class="price">€ <?php echo $product["price"] ?></div>
                                 <!-- price -->
+
+                                <!-- if food print weigth (g)-->
+                                <?php
+                                if ($nameCategory === "Food") {
+                                    $prod_food = new Food($product["name"], $product["price"], new Category($product["category"]), $product["weigth"]);
+                                    $products[] = $prod_food;
+                                ?>
+                                    <div class="weigth">Peso: <?php echo $product["weigth"] ?> g</div>
+
+                                    <!-- elseif bed print size -->
+                                <?php
+                                } elseif ($nameCategory === "Bed") {
+                                    $prod_bed = new Bed($product["name"], $product["price"], new Category($product["category"]), $product["size"]);
+                                    $products[] = $prod_food;
+                                ?>
+                                    <div class="size">Dimensioni: <?php echo $product["size"] ?></div>
+
+                                    <!-- elseif toy print material -->
+                                <?php
+                                } elseif ($nameCategory === "Toy") {
+                                    $prod_toy = new Toy($product["name"], $product["price"], new Category($product["category"]), $product["material"]);
+                                    $products[] = $prod_food;
+
+                                ?>
+                                    <div class="material">Materiale: <?php echo $product["material"] ?> </div>
+                                <?php } ?>
                             </div>
                             <!-- CARD -->
 
                         </div>
 
                 <?php
-                        if ($nameCategory === "Food") {
-                            $prod_food = new Food($product["name"], $product["price"], new Category($product["category"]), $product["weigth"]);
-                            $products[] = $prod_food;
-                        } elseif ($nameCategory === "Bed") {
-                            $prod_bed = new Bed($product["name"], $product["price"], new Category($product["category"]), $product["size"]);
-                            $products[] = $prod_food;
-                        } elseif ($nameCategory === "Toy") {
-                            $prod_toy = new Toy($product["name"], $product["price"], new Category($product["category"]), $product["material"]);
-                            $products[] = $prod_food;
-                        }
                     }
                 }
                 ?>
