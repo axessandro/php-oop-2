@@ -1,21 +1,21 @@
 <?php
 require_once __DIR__ . "/Database/database.php";
 require_once __DIR__ . "/Models/Customer.php";
-require_once __DIR__ . "/Models/ShoppingBasket.php";
+require_once __DIR__ . "/Models/ShoppingCart.php";
 require_once __DIR__ . "/Models/CreditCard.php";
 
 
 $guest = new Customer("axe", "axe@gmail.com");
-$guest->basket = new ShoppingBasket();
-// $guest->basket->add($crocchette);
-// $guest->basket->add($topo);
+$guest->cart = new ShoppingCart();
+// $guest->cart->add();
+// $guest->cart->add($products["Toy"][1]);
 
-$total = $guest->basket->getTotal();
+// $total = $guest->cart->getTotal();
 // var_dump($total);
 
 // buy porcessing
 $guest->addCreditCard(new CreditCard("2123242342", "883", 12, 2023));
-
+// var_dump($guest);
 // $result = $guest->pay($total);
 
 ?>
