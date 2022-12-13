@@ -32,21 +32,23 @@ foreach ($products as $productItem) {
 
 <body>
     <header>
-        <h1>Whisky Shop</h1>
+        <h1 class="text-center p-5">Whisky Shop</h1>
     </header>
     <main>
         <div class="container">
-            <div class="row row-cols-4">
+            <div class="row row-cols-4 g-4">
                 <?php
                 foreach ($products_to_print as $product) {
                 ?>
 
                     <div class="col">
-                        <div class="name"> <?php echo $product->name ?> </div>
-                        <div class="category"><?php echo $product->category ?></div>
-                        <div class="under_category"><?php echo $product->under_category ?></div>
-                        <div class="size"><?php echo $product->size ?> </div>
-                        <div class="price"> <?php echo $product->getPrice() ?>€</div>
+                        <div class="card p-2">
+                            <div class="name"> <?php echo $product->name ?> </div>
+                            <div class="category"><?php echo $product->category ?></div>
+                            <div class="under_category"><?php echo $product->under_category ?></div>
+                            <div class="size"><?php echo $product->size ?> </div>
+                            <div class="price"> <?php echo $product->getPrice() ?>€</div>
+                        </div>
                     </div>
 
                 <?php } ?>
